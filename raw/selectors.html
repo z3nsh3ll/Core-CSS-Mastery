@@ -5,11 +5,11 @@
 </head>
 
 <body>
-    <h1> Selectors in CSS </h1>
+    <h1 id="title"> Selectors in CSS </h1>
     <p> This is a regular paragraph</p>
     <div>
-        <p>This is a paragraph inside a div</p>
-        <p>This is a second paragraph inside a class</p>
+        <p id="firstParagraph">This is a paragraph inside a div</p>
+        <p>This is a second paragraph inside a div</p>
     </div>
     <p class="customClass">
         This is a paragraph
@@ -20,4 +20,34 @@
 </html>
 <style>
 
+
 </style>
+
+<!-- Selectors
+
+Basic selectors
+------------------
+
+p { select a single element }
+.class { select elements with a specific class }
+#id { select an element with a specific id }
+
+
+Other selectors
+------------------
+
+p, h1 { select multiple elements with a comma }
+div p { select a paragraph inside a div }
+div + p { select a paragraph that comes directly after a div }
+body div p + p { style a paragraph that comes after a paragraph inside a div which is inside the body}
+*[id] { style any element with the attribute id}
+*[id='firstParagraph']{ style any element where the attribute id = 'firstParagraph'}
+
+PSEUDO
+-------------------
+
+p:hover { style an element based on its state PSEUDO CLASS }
+p::first-line { style a part of an element PSEUDO ELEMENT}
+
+
+-->
