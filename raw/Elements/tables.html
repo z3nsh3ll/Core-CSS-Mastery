@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Tables</title>
+</head>
+<body>
+<table>
+    <caption> An Awesome Table</caption>
+    <thead>
+    <tr>
+        <th scope="col"><span>Column 1</span></th>
+        <th scope="col"><span>Column 2</span></th>
+        <th scope="col"><span>Column 3</span></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Colum 1 Row 1</td>
+        <td>Colum 2 Row 1</td>
+        <td>Colum 3 Row 1</td>
+    </tr>
+    <tr>
+        <td>Colum 1 Row 2</td>
+        <td>Colum 2 Row 2</td>
+        <td>Colum 3 Row 2</td>
+    </tr>
+    <tr>
+        <td>Colum 1 Row 3</td>
+        <td>Colum 2 Row 3</td>
+        <td>Colum 3 Row 3</td>
+    </tr>
+    <tr>
+        <td>Colum 1 Row 4</td>
+        <td>Colum 2 Row 4</td>
+        <td>Colum 3 Row 4</td>
+    </tr>
+    <tr>
+        <td>Colum 1 Row 5</td>
+        <td>Colum 2 Row 5</td>
+        <td>Colum 3 Row 5</td>
+    </tr>
+</tbody>
+<tfoot>
+    <td colspan="3"><span>18 cells including the headings</span></td>
+</tfoot>
+</table>
+
+
+
+</body>
+</html>
+<style>
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border: solid 1px darkgreen;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        text-align: center;
+        border: solid 1px darkgreen;
+        padding: 10px;
+        color: darkgreen;
+        font-weight: bold;
+    }
+
+    thead {
+        background: url(tree.png);
+        background-size: contain;
+    }
+
+    tfoot {
+        background: linear-gradient(to bottom, yellow, green);
+    }
+
+    span {
+        background-color: white;
+        padding: 5px;
+        font-size: 25px;
+        border: solid 1px darkgreen;
+    }
+
+    tbody tr:nth-child(even){
+        background-color: lightgoldenrodyellow;
+    }
+
+    caption {
+        font-size: 40px;
+        color: darkgreen;
+        caption-side: top;
+        text-shadow: 1px 1px 3px black;
+    }
+
+</style>
+
+<!-- STYLING TABLES IN CSS
+    table-layout: fixed, auto;
+    width: 100%;
+    border-collapse: collpase:
+    border:
+    text-align:
+
+
+    thead tr:nth-child(odd)
+
+ 
+-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Links</title>
+</head>
+
+<h1>Styling Links with CSS</h1>
+
+<a href="link_location.html">Link 1</a><br><br>
+<a href="location.html">Link 2</a><br><br>
+<a href="location.html">Link 3</a><br><br>
+<a href="location.html">Link 4</a><br><br>
+
+
+</html>
+<style>
+
+
+a:link { color: red; }
+a:visited { color: orange;  }
+a:hover { color:magenta;  }
+a:focus { outline: cyan dashed 3px; }
+a:active { color:limegreen;  }
+
+</style>
+
+<!-- STYLING LINKS WITH CSS
+
+Links are styled the same as text, but we need to 
+target their different states using pseudo classes.
+
+a { Style an anchor tag element }
+a:link { A link that has a destination }
+a:visited { A link that exists in browser history }
+a:focus { A link that is in focus, selected by tab}
+a:hover { A link that is being hovered over }
+a:active { A link that is in the process of being clicked }
+
+-->

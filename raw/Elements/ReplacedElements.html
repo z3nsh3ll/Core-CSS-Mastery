@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Replaced Elements</title>
+</head>
+<body>
+
+
+    <div class="container1">
+        <video controls width="250" id="catVideo">
+            <source src="cat.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    
+    </div>
+
+    <div class="container2">
+        <img id="tree" src="tree.png" src="a nice looking tree">
+    </div>
+
+    <div class="container3">
+          <img id="cheetahs" src="cheetah.jpg" alt="cheetahs">
+    </div>
+    
+
+
+
+    <!-- <img id="cheetahs" src="cheetah.jpg" alt="cheetahs"> -->
+    
+
+</body>
+</html>
+<style>
+
+
+
+    .container1, .container2 {
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        border: solid 1px black;
+    }
+
+    .container3 {
+        width: 800px;
+        height: 800px;
+        border: solid 1px black;
+    }
+
+    #tree {
+        width: 400px;
+        height: 200px;
+        object-fit: contain;
+        object-position: left;
+    }
+
+    #catVideo {
+        width: 400px;
+        height: 200px;
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    #cheetahs {
+        width: 800px;
+        height: 800px;
+        object-fit: none;
+        object-position: 25% 50%;
+    }
+
+ 
+
+</style>
+
+<!-- STYLING REPLACED ELEMENTS IN CSS
+object-fit: [contain, cover, fill, none, scale-down];
+object-position: [right top, left bottom, 50% 50%, 250px 125px];
+-->

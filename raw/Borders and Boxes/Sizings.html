@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Styling Sizings</title>
+</head>
+<body>
+
+
+    <p class="paragraph">
+        Lorem Ipsum is simply dummy text of the printing and typesetting 
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+         since the 1500s, when an unknown printer took a galley of type and scrambled 
+         it to make a type specimen book. It has survived not only five centuries, 
+         but also the leap into electronic typesetting, remaining essentially unchanged. 
+         It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like
+           Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+
+    <div class="container1"></div>
+
+    <div class="container2">
+        <div class="container1">
+            <div class="container3"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<style>
+div {
+    background-color: red;
+}
+
+
+
+.container1 {
+    width: 50%;
+    height: 75%;
+}
+
+
+.container3 {
+    width: 50%;
+    height: 75%;
+    background-color:yellow;
+}
+
+
+.container2 {
+    background-color: blue;
+    height: 25vh;
+    width: 50vh;
+}
+
+
+
+html {
+    font-size:3px;
+}
+p {
+    font-size: 2rem;
+    display: none;
+}
+</style>
+
+<!-- STYLING SIZINGS WITH CSS
+    
+width: [size] //Set an element's width
+height: [size] //Set an element's height
+max-width: [size] //Set an element's max-width
+min-width: [size] //Set an element's min-width
+max-height: [size] //Set an element's max-height
+min-height: [size] //Set an element's min-height
+
+Sizing values:
+em // parent element multiple e.g 2em
+rem // root element multiple e.g 2rem
+% // Percentage of parent
+vw // viewport width
+vh // viewport height
+cm // centimetres
+mm // millimetres
+
+
+-->
