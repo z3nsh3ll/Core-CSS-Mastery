@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <head>
-    <title>Grid</title>
+    <title>Responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+    <nav class="wide-viewport">
+        <div class="left">
+        <span class="nav-item">Home</span>
+        <span class="nav-item">Shop</span>
+        <span class="nav-item">Forum</span>
+        </div>
+
+        <div class="right">
+        <span class="nav-item">Cart</span>
+        <span class="nav-item">My Account</span>
+        </div>
+    </nav>
+
+
+    <nav class="mobile-viewport">
+            <div class="fa fa-bars hamburger"></div>
+    </nav>
+
+
+
 <div class="grid-container">
     <div class="header"><h1>Document Heading</h1></div>
     <div class="main">
@@ -25,18 +47,85 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </body>
 </html>
 <style>
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;  
+    height: 40px;
+    background: linear-gradient(to bottom, white, grey) 
+}
+
+
+
+.hamburger {
+    margin: auto;
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-viewport {
+    display: none;
+}
+
+.left {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-item {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+
 .grid-container {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 4fr 1fr;
     display: grid;
     height: 97vh;
-    border: solid 5px red;
+
     grid-template-areas:
     "header header"
      "main aside"
      "footer footer"
    
 }
+
+@media (max-width: 600px){
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer"
+    }
+
+    .mobile-viewport {
+        display: flex;
+    }
+
+    .wide-viewport {
+        display: none;
+    }
+
+
+}
+
+
 
 .cell {
     border: solid 2px red;
