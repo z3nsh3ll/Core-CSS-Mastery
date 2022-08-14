@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Styling in CSS</title>
-    <link rel="stylesheet" href="styling.css">
+    <title>Creating a Palette</title>
 </head>
 
 <body>
-    <h1 style="color:blue;">This is a H1</h1>
-    <h2 style="color:aqua;"> This is a H2 </h2>
-    <h3> This is a H3 </h3>
+    <h1>This is a H1</h1>
+    <h2> This is a H2</h2>
+    <h3> This is a H3</h3>
+    <h4>This is a H4</h4> 
+
     
-    <p class="paragraph1">
+    <h3>H3 heading for paragraph</h3>
+    <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting 
         industry. Lorem Ipsum has been the industry's standard dummy text ever
          since the 1500s, when an unknown printer took a galley of type and scrambled 
@@ -21,7 +23,8 @@
            Aldus PageMaker including versions of Lorem Ipsum.
     </p>
 
-    <p class="paragraph2">
+    <h3>H3 heading for paragraph</h3>
+    <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting 
         industry. Lorem Ipsum has been the industry's standard dummy text ever
          since the 1500s, when an unknown printer took a galley of type and scrambled 
@@ -30,15 +33,67 @@
          It was popularised in the 1960s with the release of Letraset sheets containing
           Lorem Ipsum passages, and more recently with desktop publishing software like
            Aldus PageMaker including versions of Lorem Ipsum.
-
     </p>
+
+    
+<ul>
+    <li>This is a list item</li>
+    <li>This is a list item</li>
+    <li>This is a list item</li>
+    <li>This is a list item</li>
+</ul>
+
+
+<a href="#">Hyperlink</a>
+<br> <br>
+<a href="unvisited.html">Unvisted hyperlink</a>
 
 </body>
 
 </html>
 
 <style>
+body {
+    background-color: #AED0C6;
+}
+h1 {
+    color: #FD4D0C;
+    text-align: center;
+    background-color: #448D76;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #226851;
+}
+
+ul {
+    line-height: 50px;
+}
+
+p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    color:#093426;
+    line-height: 30px;
+}
 
 
 </style>
+
+<!--
+    It's a great idea to consider the theme of a site separate from its content.
+    A palette allows us to define our color without worrying directly about the
+    site's content. It's a great idea for a developer to have some go to color
+    palettes to use as a starting point for new projects (although it's likely
+    these will need to be modified depending on the project.)
+
+    Clear all the styling in this document, copy the document a few times
+    and start generating some color palettes that can be used in real
+    web development projects. 
+-->
+
 

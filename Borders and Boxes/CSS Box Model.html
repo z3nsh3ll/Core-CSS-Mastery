@@ -9,15 +9,9 @@
 <span>Span 3</span>
 
 
-
-
 <div>Div 1</div>
 <div>Div 2</div>
 <div>Div 3</div>
-
-
-
-
 
 </body>
 
@@ -45,16 +39,26 @@ div {
 
 </style>
 
-<!-- BOX SHADOWS WITH CSS
+<!-- BOX MODEL WITH CSS
 
-box-shadow [inset, offset-x, offset-y, blur-radius, spread-radius, color]
+Firstly, every element has content, padding, border and margin, in that order. Combined, these will
+determine the overall space an element takes up.
 
-inset -> Sets the shadow inside the box.
-offset-x -> Location and size the shadow horizontally.
-offset-y -> Location and size of the shadow vertically.
-blur-radius - The larger the value, the bigger the blur effect on the shadow.
-spread-radius - The size of the shadow itself
-color - Any CSS color
+"Box model" also refers to the 3 main different types of display that can be set on html elements.
 
-text-shadow - Extremely similar to box shadow but for text
+1. Block - Elements have height and width but always take up an entire row in the viewport. Other
+elements will always be pushed to the next line, regardless of a block element's width.
+
+2. Inline - Elements won't take width and heigh properties and only take up the space of their
+content. Inline elements will appear next to other inline and inline-block elements on the
+same row provided there is space. 
+
+3. Inline-Block - These are a hybrid option. They mostly behave like Inline elements but
+it's now possible to style their width and height (as in the case of block elements).
+
+In html a <div> is a block level element by default while a <span> is an inline element.
+Although they accomplish similar purposes they behave very differently as a result. It's possible to 
+make a <div> behave like a <span> (and vice versa) by changing the display property on these elements. 
+
+
 -->
